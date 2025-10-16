@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простое SPA</title>
+    <style>
+        nav { margin: 20px 0; }
+        nav a { margin: 0 10px; text-decoration: none; color: blue; }
+        nav a:hover { text-decoration: underline; }
+        .page { display: none; padding: 20px; border: 1px solid #ccc; }
+        .active { display: block; }
+    </style>
+</head>
+<body>
+    <h1>Мое SPA приложение</h1>
+    
+    <nav>
+        <a href="#home" data-page="home">Главная</a>
+        <a href="#about" data-page="about">О нас</a>
+        <a href="#contact" data-page="contact">Контакты</a>
+    </nav>
+    
+    <div id="home" class="page active">
+        <h2>Добро пожаловать!</h2>
+        <p>Это главная страница нашего SPA приложения.</p>
+    </div>
+    
+    <div id="about" class="page">
+        <h2>О нас</h2>
+        <p>Мы создаем простые и эффективные веб-приложения.</p>
+    </div>
+    
+    <div id="contact" class="page">
+        <h2>Контакты</h2>
+        <p>Email: example@mail.com</p>
+        <p>Телефон: +7 (999) 123-45-67</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
